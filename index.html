@@ -7,6 +7,20 @@
   <link rel="reset" href="./assets/reset.css">
   
   <link rel="stylesheet" href="./assets/style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  
   <title>Document</title>
 </head>
 <body>
@@ -15,6 +29,10 @@
     <input type="search" id="query" name="q" placeholder="Search...">
     <button id="btn">Search</button>
   </form>
+
+  <h1 class="text-3xl font-bold underline text-clifford">
+    Hello world!
+  </h1>
 
   <script src="./assets/script.js"></script>
 </body>
