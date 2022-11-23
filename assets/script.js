@@ -3,12 +3,12 @@ var ytUrl =
 
 var randomUrl = "https://www.themealdb.com/api/json/v1/1/random.php";
 
-var btn = document.getElementById("btn");
-var query = document.getElementById("query");
+var foodName = document.querySelector(".input");
+var btn = document.querySelector(".button");
 
 function getInput(event) {
   event.preventDefault();
-  userInput = query.value.replace(/\s/g, "+");
+  userInput = foodName.value.replace(/\s/g, "+");
   ytSearch = ytUrl + userInput + "recipe";
   setUrl();
 }
