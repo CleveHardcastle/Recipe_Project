@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="reset" href="./assets/reset.css">
-  
-  <link rel="stylesheet" href="./assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="reset" href="./assets/reset.css" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-  
-  <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/style.css" />
 
-  <form id="form">
-    <input type="search" id="query" name="q" placeholder="Search...">
-    <button id="btn">Search</button>
-  </form>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
 
-  <h1 class="text-3xl font-bold underline text-clifford">
-    Hello world!
-  </h1>
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <input type="search" id="query" name="q" placeholder="Search..." />
+      <button id="btn">Search</button>
+    </form>
 
-  <iframe id="player" width="420" height="315" src="https://www.youtube.com/embed/" frameborder="0"
-    allowfullscreen></iframe>
+    <h1 class="text-3xl font-bold underline text-clifford">Hello world!</h1>
+    <input type="text" class="input" />
+    <button class="button">Search</button>
+    <div class="display"></div>
+    <script src="script.js"></script>
 
   <script src="./assets/script.js"></script>
 </body>
