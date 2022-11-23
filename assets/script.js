@@ -6,8 +6,8 @@ var query = document.getElementById("query");
 
 function getInput(event) {
   event.preventDefault();
-  userInput = query.value;
-  ytSearch = ytUrl + userInput;
+  userInput = query.value.replace(/\s/g, "+");
+  ytSearch = ytUrl + userInput + "recipe";
   fetch(ytSearch)
     .then(function (response) {
       return response.json();
