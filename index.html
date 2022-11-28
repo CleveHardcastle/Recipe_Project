@@ -1,40 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="reset" href="./assets/reset.css" />
-
     <link rel="stylesheet" href="./assets/style.css" />
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "red",
-            },
-          },
-        },
-      };
-    </script>
-
     <title>Document</title>
-      <style>
-        #checkbox:checked + label .switch-ball {
-          background-color: white;
-          transform: translateX(24px);
-          transition: transform 0.3s linear;
-        }
-      </style>
   </head>
-  <body class="bg-white dark:bg-gray-800 dark:text-black">
+  <!-- Dark Mode Start -->
+  <body>
     <div class="flex justify-end items-center space-x-2 mx-auto relative">
       <span class="text-xs font-extralight">Light </span>
       <div class="flex flex-wrap justify-end">
-        <input type="checkbox" name="" id="checkbox" class="hidden" />
+        <input type="checkbox" name="check" id="checkbox" />
         <label for="checkbox" class="cursor-pointer">
           <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p2">
             <div class="w-4 h-4 bg-white rounded-full shadow"></div>
@@ -43,6 +22,8 @@
       </div>
       <span class="text-xs font-semibold">dark</span>
     </div>
+    <!-- Dark Mode End -->
+    
     <div class="p-10 flex flex-wrap justify-center bg-gray-500">
     <h1 class="text-3xl font-bold underline text-clifford">Hello world!</h1>
     </div>
@@ -58,5 +39,17 @@
   <script src="./assets/script.js"></script>
   <script src="./assets/script2.js"></script>
   <script src="./assets/script3.js"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: "red",
+              },
+            },
+          },
+        };
+      </script>
 </body>
 </html>

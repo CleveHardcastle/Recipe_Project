@@ -1,0 +1,5 @@
+    #checkbox:checked + label .switch-ball{
+      background-color: black;
+      transform: translateX(24px);
+      transition: transform 0.3s linear;
+    }
