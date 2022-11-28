@@ -12,10 +12,6 @@ var recipeText = document.getElementById("embed-containers");
 player.style.display = "none";
 recipeText.style.display = "none";
 
-
-player.style.display = "none";
-
-
 function getInput(event) {
   event.preventDefault();
   userInput = foodName.value.replace(/\s/g, "+");
@@ -30,9 +26,7 @@ function setUrl() {
     })
     .then(function (data) {
       player.style.display = "flex";
-
       recipeText.style.display = "flex";
-
 
       videoId = data.items[0].id.videoId;
       ytEndUrl = "https://www.youtube.com/embed/" + videoId;
