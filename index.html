@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +14,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              clifford: "red",
             },
           },
         },
@@ -22,44 +22,29 @@
     </script>
 
     <title>Document</title>
+      <style>
+        #checkbox:checked + label .switch-ball {
+          background-color: white;
+          transform: translateX(24px);
+          transition: transform 0.3s linear;
+        }
+      </style>
   </head>
   <body>
 
-    <!-- <h1 class="text-3xl font-bold underline text-clifford">Hello world!</h1>
+    <h1 class="text-3xl font-bold underline text-clifford">Hello world!</h1>
     <input type="text" class="input" />
-    <button class="button">Search</button>
+    <div style="background-color:white; color:black ">
+      <button class="button">Search</button>
+    </div>
     <div class="display"></div>
     <script src="script.js"></script>
 
-    
-      <-- main embed sections -->
-    <section id="embed-containers">
-      <div class="container flex flex-row justify-center mxauto mt-10 space-x-32">
-        <div class="flex flex-col space-y-12 md:2-1/2 bg-slate-500 p-10">
-          <h2 class="max-w-md text-4xl font-bold text-center"
-          id="recipe-title">
-            Placeholder
-          </h2>
-          <p class="max-w-sm text-center text-darkBlue"
-          id="recipe-content">
-            placeholder placeholder placeholde placehodler
-          </p>
-        </div>
+    <iframe id="player" type="text/html" width="640" height="360"
+      src="https://www.youtube.com/embed/"></iframe>
 
-        <!-- youtube embed -->
-        <div class="flex flex-col space-y-12 md:w-1/2 bg-slate-500">
-          <h2 class="max-w-md text-4xl font-bold text-center"
-          id="youtube-title">
-            Placeholder Title
-          </h2>
-          <div class="flex justify-center pb-10">
-            <iframe id="player" type="text/html" width="500" height="300"
-            src="https://www.youtube.com/embed/"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
   <script src="./assets/script.js"></script>
   <script src="./assets/script2.js"></script>
+  <script src="./assets/script3.js"></script>
 </body>
 </html>
