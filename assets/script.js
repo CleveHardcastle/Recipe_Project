@@ -7,7 +7,14 @@ var foodName = document.querySelector(".input");
 var btn = document.querySelector(".button");
 var player = document.getElementById("player");
 
+var recipeText = document.getElementById("embed-containers");
+
 player.style.display = "none";
+recipeText.style.display = "none";
+
+
+player.style.display = "none";
+
 
 function getInput(event) {
   event.preventDefault();
@@ -23,6 +30,10 @@ function setUrl() {
     })
     .then(function (data) {
       player.style.display = "flex";
+
+      recipeText.style.display = "flex";
+
+
       videoId = data.items[0].id.videoId;
       ytEndUrl = "https://www.youtube.com/embed/" + videoId;
       console.log(ytEndUrl);
