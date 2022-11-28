@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +14,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              clifford: "red",
             },
           },
         },
@@ -22,19 +22,41 @@
     </script>
 
     <title>Document</title>
+      <style>
+        #checkbox:checked + label .switch-ball {
+          background-color: white;
+          transform: translateX(24px);
+          transition: transform 0.3s linear;
+        }
+      </style>
   </head>
-  <body>
-
+  <body class="bg-white dark:bg-gray-800 dark:text-black">
+    <div class="flex justify-end items-center space-x-2 mx-auto relative">
+      <span class="text-xs font-extralight">Light </span>
+      <div class="flex flex-wrap justify-end">
+        <input type="checkbox" name="" id="checkbox" class="hidden" />
+        <label for="checkbox" class="cursor-pointer">
+          <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p2">
+            <div class="w-4 h-4 bg-white rounded-full shadow"></div>
+          </div>
+        </label>
+      </div>
+      <span class="text-xs font-semibold">dark</span>
+    </div>
+    <div class="p-10 flex flex-wrap justify-center bg-gray-500">
     <h1 class="text-3xl font-bold underline text-clifford">Hello world!</h1>
+    </div>
     <input type="text" class="input" />
-    <button class="button">Search</button>
+    <div style="background-color:white; color:black ">
+      <button class="button">Search</button>
+    </div>
     <div class="display"></div>
-    <script src="script.js"></script>
 
     <iframe id="player" type="text/html" width="640" height="360"
       src="https://www.youtube.com/embed/"></iframe>
 
   <script src="./assets/script.js"></script>
   <script src="./assets/script2.js"></script>
+  <script src="./assets/script3.js"></script>
 </body>
 </html>
