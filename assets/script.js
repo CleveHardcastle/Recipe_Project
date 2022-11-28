@@ -5,6 +5,9 @@ var randomUrl = "https://www.themealdb.com/api/json/v1/1/random.php";
 
 var foodName = document.querySelector(".input");
 var btn = document.querySelector(".button");
+var player = document.getElementById("player");
+
+player.style.display = "none";
 
 function getInput(event) {
   event.preventDefault();
@@ -19,6 +22,7 @@ function setUrl() {
       return response.json();
     })
     .then(function (data) {
+      player.style.display = "flex";
       videoId = data.items[0].id.videoId;
       ytEndUrl = "https://www.youtube.com/embed/" + videoId;
       console.log(ytEndUrl);
