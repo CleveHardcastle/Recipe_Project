@@ -1,7 +1,6 @@
 # Recipe_Project
 
-DESCRIPTION 
-===========
+## DESCRIPTION 
 
 This web based application will search through two different APIs to return results from both a recipe API and YouTube’s API for both a text recipe and a video tutorial of whatever dish you’re looking to cook. 
 
@@ -11,7 +10,7 @@ The problem that this application looks to solve is the task of combing through 
 
 Throughout this project we learned and strengthened many of the skills we have learned through our first month in our bootcamp. Working with APIs was one such thing we’ve been introduced to that was a major part of getting this project to work. Next, web frameworks. We were required to use one that we’d not covered yet in class. We chose to use TailwindCSS as our preferred framework. It definitely was difficult to get a brand new framework you’ve never used before working in a short time, but we managed to persevere and get it working in the end.  
 
-USAGE
+## USAGE
 
 To use the application simply navigate to it’s live link at: https://clevehardcastle.github.io/Recipe_Project
 
@@ -19,7 +18,7 @@ Click onto the search bar and type in whatever recipe you desire to get directio
 
 Hit enter and see the results displayed!
 
-COLLABORATORS 
+## COLLABORATORS 
 
 Cleve - https://github.com/CleveHardcastle
 
@@ -29,7 +28,7 @@ Nathan -  https://github.com/nathannguyen0102
 
 Omar - https://github.com/omousa98
 
-LICENSE 
+## LICENSE 
 
 MIT License
 
