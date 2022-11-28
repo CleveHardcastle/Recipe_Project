@@ -1,6 +1,7 @@
 # Recipe_Project
 
 DESCRIPTION 
+===========
 
 This web based application will search through two different APIs to return results from both a recipe API and YouTube’s API for both a text recipe and a video tutorial of whatever dish you’re looking to cook. 
 
