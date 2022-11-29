@@ -1,7 +1,7 @@
 var ytUrl =
   "https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAHEGZXjoIAQqhuRGwRo0koBdvnGGIPul0&q=";
 
-var randomUrl = "https://www.themealdb.com/api/json/v1/1/random.php";
+
 
 var foodName = document.querySelector(".input");
 var btn = document.querySelector(".button");
