@@ -29,5 +29,10 @@
 }
 
 .logo {
-  width: 80px;
+  scale: 140%;
+}
+
+.logo2 {
+  height: 36px;
+  padding-left: 14px;
 }
