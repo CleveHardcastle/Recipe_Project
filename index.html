@@ -15,7 +15,10 @@
       theme: {
         extend: {
           colors: {
-            clifford: "#da373d",
+            sack: "#957C6A",
+            tomato: "#C41C0C",
+            deepbrown: "#221508",
+            accentdeepbrown: "#36210D"
           },
         },
       },
@@ -25,7 +28,39 @@
   <title>Document</title>
 </head>
 
-<body>
+
+
+
+<nav class="bg-deepbrown border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <a href="" class="flex items-center">
+        <img class="logo" src="assets/photos/logo.png" class="h-6 mr-3 sm:h-9" alt="Logo" />
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-accentdeepbrown md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-accentdeepbrown">
+        <li>
+          <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-tomato rounded md:bg-transparent md:text-tomato md:p-0 dark:text-tomato" aria-current="page">Search</a>
+        </li>
+        <li>
+          <a href="landing.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-tomato md:p-0">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-tomato md:p-0">About</a>
+        </li>
+        <li>
+          <a href="recipes.html" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-tomato md:p-0">Recipes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <body>
   <div class="topnav">
     <a class="navbar-brand" href="/">
       <div class="logo-image">
@@ -36,7 +71,7 @@
     <a href="#">Search</a>
     <a href="#">How it works</a>
     <a href="#">About</a>
-  </div>
+  </div> -->
 
   <!-- <div class="display"></div>
     <script src="script.js"></script> -->
@@ -47,12 +82,13 @@
 
   <div class="flex justify-center">
     <div class="mb-3 xl:w-96">
-      <div class="input-group relative flex flex-wrap items-stretch w-full mb-4">
+      <h2 class="text-4xl font-bold text-center p-5 max-w-xl">Search for a recipe..</h2>
+      <div class="input-group relative flex flex-row items-stretch w-full mb-4">
         <input type="search"
-          class="input form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+          class="input form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-600 focus:outline-none"
           placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
         <button
-          class="button btn inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center"
+          class="button btn inline-block px-6 py-2.5 bg-red-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 hover:shadow-lg focus:bg-red-600  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-600 active:shadow-lg transition duration-150 ease-in-out flex items-center"
           type="button" id="button-addon2">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -70,23 +106,8 @@
     <div class="container flex flex-row justify-evenly items-center mxauto mt-10 ml-24">
       <div class="flex flex-col space-y-12 bg-neutral-100 p-10 border-t-[15px] border-b-[15px] border-red-400">
         <h2 class="text-4xl font-bold text-center" id="recipe-title">
-          Placeholder
         </h2>
-        <p class="max-w-sm text-center" id="recipe-content">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, doloribus nesciunt aut consectetur mollitia
-          quia architecto officiis aperiam hic aspernatur unde culpa cum a et distinctio labore excepturi iste dolorem.
-          Corrupti possimus minima voluptatibus, nisi voluptatem voluptate explicabo doloremque corporis quasi? Facilis,
-          sunt consectetur a voluptates rem id excepturi temporibus commodi illum dolor animi? Nobis odit dolorum nihil
-          amet. Quis.
-          Vero quisquam illum eaque mollitia dolorem asperiores, ex soluta consequuntur quasi eos! Dolorum nihil quasi
-          fuga rerum enim reprehenderit possimus numquam quae. Quaerat aperiam doloribus fugit, iusto magnam impedit
-          nulla.
-          Culpa, impedit corporis harum error consequatur blanditiis! Consequatur at, aspernatur itaque laboriosam
-          labore harum omnis laborum iusto autem in accusamus amet impedit temporibus facilis dolor culpa distinctio
-          tempora iste? Ipsa.
-          Natus voluptatibus repellat facilis hic pariatur illum rerum adipisci aliquam, est perferendis deserunt
-          reiciendis qui necessitatibus animi ipsum suscipit ullam quia. Ducimus nostrum blanditiis doloremque minima!
-          Voluptates perferendis pariatur amet?
+        <p class="max-w-sm text-left" id="recipe-content">
         </p>
       </div>
 
@@ -97,7 +118,7 @@
             Placeholder Title
           </h2> -->
         <div class="flex justify-center items-center">
-          <iframe id="player" type="text/html" width="500" height="400" src="https://www.youtube.com/embed/fC7oUOUEEi4"></iframe>
+          <iframe id="player" class="noPlayer" type="text/html" width="500" height="400" src="https://www.youtube.com/embed/"></iframe>
         </div>
       </div>
     </div>
