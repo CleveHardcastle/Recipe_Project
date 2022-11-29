@@ -14,7 +14,6 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-
 }
 
 /* Change the color of links on hover */
@@ -25,7 +24,10 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
 
+.logo {
+  width: 80px;
+}
