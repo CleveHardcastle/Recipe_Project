@@ -15,7 +15,7 @@ html {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
 }
 
@@ -25,6 +25,17 @@ html {
   background-color: #474e5d;
   color: white;
 }
+
+
+.container {
+  padding: 0 16px;
+}
+
+/* .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
 
 .title {
   color: grey;
