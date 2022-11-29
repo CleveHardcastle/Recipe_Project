@@ -7,10 +7,6 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 .column {
   float: left;
   width: 33.3%;
@@ -30,6 +26,11 @@ html {
   color: white;
 }
 
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 173349b (based)
 .container {
   padding: 0 16px;
 }
@@ -40,6 +41,8 @@ html {
   display: table;
 } */
 
+=======
+>>>>>>> 15d5123 (based)
 .title {
   color: grey;
 }
