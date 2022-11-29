@@ -7,10 +7,6 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 .column {
   float: left;
   width: 33.3%;
@@ -29,6 +25,7 @@ html {
   background-color: #474e5d;
   color: white;
 }
+
 
 .container {
   padding: 0 16px;
