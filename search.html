@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="reset" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="shortcut icon" href="./assets/photos/hotpot.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -15,6 +15,7 @@
               sack: "#957C6A",
               tomato: "#C41C0C",
               deepbrown: "#221508",
+              darktomato: "#AE190C",
               accentdeepbrown: "#36210D",
             },
           },
@@ -22,7 +23,7 @@
 
       };
     </script>
-    <title>Document</title>
+    <title>Search</title>
 </head>
 
 <body>
@@ -30,9 +31,9 @@
   <nav class="bg-slate-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded border-b-2 border-gray-100">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="index.html" class="flex items-center">
-        <img class="logo" src="./assets/photos/logo2.png" class="float-left" alt="Logo" />
+        <img class="logo w-12 h-12" src="./assets/photos/logo2.png" alt="Logo" />
         <span class="pl-[7px] self-center text-3xl text-black font-black whitespace-nowrap uppercase
-         transition ease-in-out hover:scale-110 duration-300">Culligen</span>
+         transition ease-in-out hover:scale-110 hover:text-tomato duration-300">Culligen</span>
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
         class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -70,47 +71,51 @@
       </div>
     </nav>
 
-  <!-- search bar for testing -->
-
-  <div class="flex justify-center">
-    <div class="mb-3 xl:w-96">
-      <h2 class="text-4xl font-bold text-center p-5 max-w-xl">Search for a recipe..</h2>
-      <div class="input-group relative flex flex-row items-stretch w-full mb-4">
-        <input type="search"
-          class="input form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-600 focus:outline-none"
-          placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-        <button
-          class="button btn inline-block px-6 py-2.5 bg-red-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 hover:shadow-lg focus:bg-red-600  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-600 active:shadow-lg transition duration-150 ease-in-out flex items-center"
-          type="button" id="button-addon2">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path fill="currentColor"
-              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
-            </path>
-          </svg>
-        </button>
+  <div class="w-full h-[15em] flex justify-center items-center bg-cover bg-center" 
+  style="background-image: url(./assets/photos/search-hero.png);">
+    <div class="bg-stone-500 bg-opacity-70 w-full h-[15em] relative z-0">
+      <!-- <p class="italic text-bold bd-red-100 font-serif"></p> -->
+      <div class="absolute inset-0 flex flex-col justify-center items-center z-10 pt-[1em]">
+        <h1 class="text-3xl font-bold text-white uppercase">Search for a Recipe...</h1>
+        <div class="input-group relative flex flex-row items-stretch w-[30em] mb-4 mt-4">
+          <input type="search"
+            class="input form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-black bg-white
+             bg-opacity-70 m-0"
+            placeholder="[ex. banh mi, ramen, etc.]" aria-label="search" aria-describedby="button-addon2">
+          <button
+            class="button btn inline-block px-6 py-2.5 bg-tomato bg-opacity-70 text-white font-medium text-xs leading-tight uppercase rounded shadow-md 
+            hover:bg-darktomato hover:shadow-lg hover:bg-opacity-70
+             transition duration-150 ease-in-out flex items-center"
+            type="button" id="button-addon2">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 
+                128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 
+                70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+              </path>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
 
+
   <!-- main embed sections -->
-  <section id="embed-containers">
-    <div class="container flex flex-row justify-evenly items-center mxauto mt-10 ml-24">
-      <div class="flex flex-col space-y-12 bg-neutral-100 p-10 border-t-[15px] border-b-[15px] border-red-400">
-        <h2 class="text-4xl font-bold text-center" id="recipe-title">
+  <section id="embed-containers mx-auto">
+    <div class="container flex flex-row justify-evenly items-center mxauto mt-10 ml-24 border border-stone-300 border-[1px] mb-10">
+      <div class="flex flex-col space-y-12 p-10">
+        <h2 class="text-4xl font-bold text-center " id="recipe-title">
         </h2>
-        <p class="max-w-sm text-left" id="recipe-content">
+        <p class="max-w-md text-left leading-loose tracking-wide" id="recipe-content">
         </p>
       </div>
-
       <!-- youtube embed -->
-      <div class="flex flex-col space-y-12 bg-neutral-100">
-        <!-- <h2 class="text-4xl font-bold text-center"
-          id="youtube-title">
-            Placeholder Title
-          </h2> -->
-        <div class="flex justify-center items-center">
-          <iframe id="player" class="noPlayer" type="text/html" width="500" height="400" src="https://www.youtube.com/embed/"></iframe>
+      <div class="flex flex-col space-y-12 bg-white">
+        <div class="flex justify-center items-center padding-7">
+          <iframe id="player" class="noPlayer" type="text/html" width="550" height="400" src="https://www.youtube.com/embed/"
+          style="margin: 5em;"></iframe>
         </div>
       </div>
     </div>
