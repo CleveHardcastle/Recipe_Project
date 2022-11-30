@@ -1,4 +1,4 @@
-# Savvory
+# SAVVORY
 
 ## DESCRIPTION 
 
