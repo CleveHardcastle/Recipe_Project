@@ -1,5 +1,5 @@
-var ytUrl =
-  "https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAHEGZXjoIAQqhuRGwRo0koBdvnGGIPul0&q=";
+// var ytUrl =
+//   "https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAzn--DVzIXyECqbZJsexiAWQOYzZLf0sA&q=";
 
 var foodName = document.querySelector(".input");
 var btn = document.querySelector(".button");
@@ -20,6 +20,7 @@ function getInput(event) {
   event.preventDefault();
   userInput = foodName.value.replace(/\s/g, "+");
   ytSearch = ytUrl + userInput + "recipe";
+  console.log(ytSearch);
   setUrl();
 }
 
