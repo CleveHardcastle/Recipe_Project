@@ -35,7 +35,7 @@
         <span class="pl-[7px] self-center text-3xl text-black font-black whitespace-nowrap uppercase
          transition ease-in-out hover:scale-110 hover:text-tomato duration-300">Culligen</span>
       </a>
-      <button data-collapse-toggle="navbar-default" type="button"
+      <button id="button" data-collapse-toggle="navbar-default" type="button"
         class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
         aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -69,6 +69,24 @@
           </li>
         </ul>
       </div>
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active"><a href="search.html"
+              class="block text-sm px-2 py-4 text-white bg-tomato font-semibold">Search</a></li>
+          <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+          <li><a href="about.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+          <li><a href="recipes.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Recipes</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("#button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
     </nav>
 
   <div class="w-full h-[15em] flex justify-center items-center bg-cover bg-center" 
