@@ -19,6 +19,7 @@ function setRandom1() {
       return response.json();
     })
     .then(function (data) {
+      console.log(data);
       name.innerHTML = data.meals[0].strMeal;
       img.src = data.meals[0].strMealThumb;
       link.href = data.meals[0].strSource;
