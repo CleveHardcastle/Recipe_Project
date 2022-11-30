@@ -18,6 +18,8 @@ Click onto the search bar and type in whatever recipe you desire to get directio
 
 Hit enter and see the results displayed!
 
+Click on the Recipe tab if you'd like some random recipe ideas! Click on an image to be taken to the recipe website. 
+
 ## COLLABORATORS 
 
 Cleve - https://github.com/CleveHardcastle
