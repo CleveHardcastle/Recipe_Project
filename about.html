@@ -32,7 +32,7 @@
         <span class="pl-[7px] self-center text-3xl text-black font-black whitespace-nowrap uppercase
          transition ease-in-out hover:scale-110 hover:text-tomato duration-300">Culligen</span>
       </a>
-      <button data-collapse-toggle="navbar-default" type="button"
+      <button id="button" data-collapse-toggle="navbar-default" type="button"
         class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
         aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -65,6 +65,24 @@
           </li>
         </ul>
       </div>
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active"><a href="search.html"
+              class="block text-sm px-2 py-4 hover:text-white hover:bg-tomato transition duration-300">Search</a></li>
+          <li><a href="index.html" class="block text-sm px-2 py-4 hover:text-white hover:bg-tomato transition duration-300">Home</a></li>
+          <li><a href="about.html" class="block text-sm px-2 py-4 text-white bg-tomato font-semibold">About</a></li>
+          <li><a href="recipes.html" class="block text-sm px-2 py-4 hover:text-white hover:bg-tomato transition duration-300">Recipes</a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        const button = document.querySelector("#button");
+        const menu = document.querySelector(".mobile-menu");
+
+        button.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
     </nav>
 
     <!-- ABOUT US -->
@@ -88,7 +106,7 @@
         <p>
           I'm Cleve Hardcastle, a coding student at the UCI Web Design boot camp. I have a particular love for back end development and all things vanilla JavaScript. My contributions to this site were mostly back end. In case he doesn't mention it our wonderful Jeremiah was the one who made the fantastic front end you currently see. 
         </p>
-        <span class="inline-block bg-white rounded-full px-3 py-1 text-sm font-bold text-tomato border border-solid border-tomato mr-2 mb-2 mt-5 transition ease-in-out hover:bg-tomato hover:text-white duration-300 uppercase"><a href="https://github.com/cytoplasma">GitHub</a></span>        
+        <span class="inline-block bg-white rounded-full px-3 py-1 text-sm font-bold text-tomato border border-solid border-tomato mr-2 mb-2 mt-5 transition ease-in-out hover:bg-tomato hover:text-white duration-300 uppercase"><a href="https://github.com/CleveHardcastle">GitHub</a></span>        
       </div>
     </div>
     <!-- omar -->
@@ -99,7 +117,7 @@
         <p>
           Hello! My name is Omar Mousa and I am a student at the UCI Coding Bootcamp. I have a genuine love for computers and computing in general. I hope you enjoy using this website as much as I had helping create it. If you wish to contact me, All info will be in my github profile page.
         </p>
-        <span class="inline-block bg-white rounded-full px-3 py-1 text-sm font-bold text-tomato border border-solid border-tomato mr-2 mb-2 mt-5 transition ease-in-out hover:bg-tomato hover:text-white duration-300 uppercase"><a href="https://github.com/cytoplasma">GitHub</a></span>        
+        <span class="inline-block bg-white rounded-full px-3 py-1 text-sm font-bold text-tomato border border-solid border-tomato mr-2 mb-2 mt-5 transition ease-in-out hover:bg-tomato hover:text-white duration-300 uppercase"><a href="https://github.com/omousa98">GitHub</a></span>        
       </div>
     </div>
     <!-- jeremiah -->
@@ -121,7 +139,7 @@
         <p>
           I am Nathan Nguyen, I am UCI web developement student. My goal is to be a good developer. I contribute to build back end for this web site. A big thank to my team mate and their contribution.
         </p>
-        <span class="inline-block bg-white rounded-full px-3 py-1 text-sm font-bold text-tomato border border-solid border-tomato mr-2 mb-2 mt-5 transition ease-in-out hover:bg-tomato hover:text-white duration-300 uppercase"><a href="https://github.com/cytoplasma">GitHub</a></span>        
+        <span class="inline-block bg-white rounded-full px-3 py-1 text-sm font-bold text-tomato border border-solid border-tomato mr-2 mb-2 mt-5 transition ease-in-out hover:bg-tomato hover:text-white duration-300 uppercase"><a href="https://github.com/nathannguyen0102">GitHub</a></span>        
       </div>
     </div>
   </div>
