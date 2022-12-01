@@ -96,8 +96,7 @@
         <!-- <p class="italic text-bold bd-red-100 font-serif"></p> -->
         <div class="absolute inset-0 flex flex-col justify-center items-center z-10 pt-[1em]">
           <h1 class="text-6xl max-w-md font-bold text-white uppercase p-7 text-center tracking-wide">All in One Recipe Generator</h1>
-          <p class="text-2xl text-white italic pb-4">Feeling Hungry?</p>
-          <p class="text-2xl text-white italic pb-4 lowercase">Where ease meets simplicity</p>
+          <p class="text-xl text-white italic pb-4 lowercase">Feeling Hungry?</p>
           <a href="search.html" class="p-7 bg-tomato transition ease-in-out hover:bg-darktomato duration-300 text-white py-4 px-6 border 
           border-darktomato rounded shadow uppercase font-black">Get Started</a>
         </div>
@@ -106,36 +105,40 @@
 
 
 
-<!-- infographics -->
-    <div class="flex flex-col md:flex-row justify-around pt-[5em] pb-[5em]">
-      <div class="max-w-sm rounded overflow-hidden shadow-2xl">
-        <img class="w-full" src="./assets/photos/searchbutton.jpg" alt="Sunset in the mountains" style="width: 200px; height: 200px; margin: auto;">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 uppercase">Search</div>
-          <p class="text-gray-700 text-base">
-            Click on the Get Started button above and search for any dish.
-          </p>
+
+    <div class="grid block justify-items-center lg:grid-cols-3 gap-4 p-7">
+      <!-- search -->
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md">
+        <a href="search.html">
+          <img src="./assets/photos/searchbutton.jpg" class="mx-auto w-[300px] rounded-t-lg">
+        </a>
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-left font-bold tracking-tight text-black uppercase text-center" id="name1">search</h5>
+          <p class="pt-[1em] text-md lowercase text-center">Click on the 'Get Started' button, or 'Search' above and search for any dish/recipe</p>
         </div>
       </div>
-      <div class="max-w-sm rounded overflow-hidden shadow-2xl">
-        <img class="w-full" src="./assets/photos/enter.jpg" alt="Sunset in the mountains" style="width: 200px; height: 200px; margin: auto;">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 uppercase">Enter</div>
-          <p class="text-gray-700 text-base">
-            Hit enter and watch the magic happen.
-          </p>
+      <!-- enter -->
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md">
+        <a href="search.html">
+          <img src="./assets/photos/enter.png" class="mx-auto w-[300px] rounded-t-lg">
+        </a>
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-left font-bold tracking-tight text-black uppercase text-center" id="name2">enter</h5>
+          <p class="pt-[1em] text-md lowercase text-center">Upon entering a desired recipe, click the search button to begin the search process</p>
+        </a>
         </div>
       </div>
-      <div class="max-w-sm rounded overflow-hidden shadow-2xl">
-        <img class="w-full" src="./assets/photos/randomize.jpg" alt="Sunset in the mountains" style="width: 200px; height: 200px; margin: auto;">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 uppercase">Randomize</div>
-          <p class="text-gray-700 text-base">
-            Click on the Recipe's Tab above and look at the random recipes we pull up for you.
-          </p>
+      <!-- randomize -->
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md">
+        <a href="recipes.html">
+          <img src="./assets/photos/randomize.jpg" class="mx-auto w-[300px] rounded-t-lg">
+        </a>
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-left font-bold tracking-tight text-black uppercase text-center" id="name4">randomize</h5>
+          <p class="pt-[1em] text-md lowercase text-center">Click on the Recipe's Tab above and look at the random recipes we pull up for you.</p>
+        </a>
         </div>
       </div>
     </div>
-
 </body>
 </html>
